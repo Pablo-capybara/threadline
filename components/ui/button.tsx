@@ -7,9 +7,9 @@ import { cn } from "@/lib/utils";
 const buttonVariants = cva(
   [
     "inline-flex shrink-0 items-center justify-center gap-1.5 whitespace-nowrap rounded-sm text-body font-medium",
-    "select-none outline-none transition-[background-color,border-color,color,box-shadow,transform] duration-150 ease-out",
+    "select-none outline-none transition-[background-color,border-color,color,box-shadow,scale] duration-150 ease-out",
     "focus-visible:ring-2 focus-visible:ring-ring/40 focus-visible:outline-none",
-    "active:scale-[0.97] disabled:pointer-events-none disabled:opacity-50",
+    "active:scale-[0.96] disabled:pointer-events-none disabled:opacity-50",
     "[&_svg]:pointer-events-none [&_svg]:shrink-0",
   ],
   {

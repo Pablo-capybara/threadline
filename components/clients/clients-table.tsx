@@ -167,7 +167,8 @@ export function ClientsTable({
                 }}
                 className={cn(
                   "group/row cursor-pointer border-b border-border last:border-b-0",
-                  "transition-colors duration-100 ease-out hover:bg-surface-hover",
+                  // No row transition: hover and arrow-key focus are high-frequency.
+                  "hover:bg-surface-hover",
                   "outline-none focus-visible:bg-surface-hover focus-visible:shadow-[inset_2px_0_0_var(--ring)]",
                   density === "compact" ? "h-row-compact" : "h-row",
                 )}

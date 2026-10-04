@@ -30,7 +30,9 @@ function TooltipContent({
         className={cn(
           "z-50 max-w-80 rounded-sm bg-primary px-2.5 py-1.5 text-meta text-primary-foreground text-pretty",
           "origin-(--radix-tooltip-content-transform-origin)",
-          "animate-in fade-in-0 zoom-in-[0.97] duration-150 ease-out",
+          "animate-in fade-in-0 zoom-in-[0.97] duration-[125ms] ease-out",
+          // Skip-delay opens (moving between tooltips) appear instantly
+          "data-[state=instant-open]:animate-none",
           "data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-[0.97]",
           className,
         )}
